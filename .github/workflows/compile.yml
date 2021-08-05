@@ -10,7 +10,22 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Nicholas_Chubb_SWE_Resume.tex
-      - uses: actions/upload-artifact@v2
+      - name: Push PDF to repo
+        uses: actions-x/commit@v2
         with:
-          name: PDF
-          path: Nicholas_Chubb_SWE_Resume.pdf
+          # The committer's email address
+          #email: # default is ${{ github.actor }}@localhost
+          # The committer's name
+          #name: # default is ${{ github.actor }}
+          # The commit message
+          message: Update Nicholas_Chubb_SWE_Resume.pdf
+          # The branch to push the changes back to, defaults to the current branch
+          #branch: # default is ${{ github.ref }}
+          # The files to add separated by space, defaults to every file
+          #files: # default is .
+          # The repository to push the code to, defaults to origin (e.g. this repository)
+          #repository: # default is origin
+          # The token used to push the code, not needed if you push to the same repository
+          #token: # default is ${{ github.token }}
+          # Whether to perform force push
+          #force: # default is 0
