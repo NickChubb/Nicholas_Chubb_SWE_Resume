@@ -1,0 +1,366 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontawesome}
+\usepackage[letterpaper,margin=.4in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    urlcolor = blue
+}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{~~\llap{--}~~}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\usepackage{verbatim}
+
+\hyphenpenalty=100000
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{1.7#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+%TITLE--------------------------------------------------------------------
+\begin{document} 
+
+\begin{center}
+
+{\Huge \textbf{Nicholas Chubb}}
+\vspace{1em}
+\\
+{\small
+{{ }\faHome { }---- ---a St., Surrey BC, Canada, --- ---} $|$ 
+{{ }\faPhoneSquare { } (---) --- -- ----} $|$ 
+{{ }\faUser { } \href{https://nickchubb.ca/}{nickchubb.ca}}  \\
+\vspace{.3em}
+{{ }\faLinkedinSquare { } \href{https://linkedin.com/in/nickrchubb}{linkedin.com/in/nickrchubb}} $|$ 
+{{ }\faGithub { } \href{https://github.com/NickChubb}{github.com/nickchubb}} $|$ 
+{{ }\faEnvelope { } \href{mailto:nick@nickchubb.ca}{nick@nickchubb.ca}}\\ \vspace{.2em}
+}
+\end{center}
+
+\hrule
+\hrule
+\vspace{-0.5em}
+%-------------------------------------------------------------------------
+
+
+\subsection*{Technical Skills}
+
+\vspace{-0.2em}
+
+\begin{itemize}[leftmargin=*]
+	\parskip=0.1em	
+
+\item[]
+
+%\begin{indentsection}{\parindent}
+\begin{tabularx}{\textwidth}{X X X X}
+
+\textbf{Languages} & \textbf{Frameworks} & \textbf{Software} & \textbf{Relevant Concepts}\\
+\tabitem Java & \tabitem Node.js & \tabitem Linux & \tabitem Agile Dev.\\
+\tabitem JavaScript & \tabitem ReactJS  & \tabitem Git & \tabitem Databases\\	
+\tabitem C/C++ & \tabitem Express.js  & \tabitem Microsoft SQL & \tabitem Project Mgmt.\\
+\tabitem Python & \tabitem Android SDK & \tabitem Nginx & \tabitem UI/UX Design\\
+%\tabitem Rust & \tabitem Android SDK & \tabitem AWS & \tabitem Project Mgmt.\\
+\\
+
+%\multicolumn{2}{l}{\textbf{Relevant Coursework}} & \textbf{Frameworks} \\
+%\multicolumn{2}{l}{\tabitem Introduction to Software Engineering (2020)} & \tabitem Android SDK \\
+%\multicolumn{2}{l}{\tabitem Biomedical Computing (2020)} & \tabitem Bootstrap 4 \\
+%\multicolumn{2}{l}{\tabitem Data Structure and Programming (2019)} & \tabitem jQuery \\
+%\multicolumn{2}{l}{\tabitem Introduction to Computing Science II (2018)} & \tabitem Standard Library \\
+%\multicolumn{2}{l}{\tabitem Introduction to Computing Science I (2017)} &   \tabitem Nginx \\
+
+
+
+\end{tabularx}
+
+\end{itemize}
+
+
+%\end{indentsection}
+
+\vspace{-1.1em}
+\hrule %-------------------------------------------------------------------------
+\vspace{-0.3em}
+
+\subsection*{Technical Work Experience}
+
+\vspace{-0.2em}
+
+\begin{itemize}[leftmargin=0em]
+	\parskip=0.1em
+	
+	\item[]
+	\headerrow
+		{\textbf{Incognito Software Systems Inc.}}
+		{\textbf{Vancouver, BC}}
+	\\
+	\headerrow
+		{\emph{Quality Assurance Engineer}}
+		{\emph{September, 2020 -- April, 2021}}
+		
+	\vspace{-.3em}
+	\begin{itemize*}
+	    \item Operated as part of an agile team to assist in the development of over 8 different software services
+		\item Designed and implemented Selenium test suite for Firmware Management Service
+        \item Wrote more than 100 tests across multiple services and stabilized Jenkins environment of over 600 tests
+	    \item Worked daily with industry-standard software solutions such as:
+	    \begin{itemize}
+		    \item Java, JUnit, Intellij, and Linux to effectively write and debug professional software tests;
+		    \item Jenkins, Postman, Wireshark, and MongoDB to debug services and investigate networking problems;
+		    \item Jira, BitBucket, and Microsoft Teams for managing workflow and communicating with my team.
+	    \end{itemize}
+	\end{itemize*}	
+	
+\end{itemize}
+
+\vspace{.2em}
+\hrule %-------------------------------------------------------------------------
+\vspace{-0.7em}
+
+\subsection*{Education}
+
+\vspace{-0.2em}
+
+\begin{itemize}[leftmargin=0em]
+
+	\parskip=0.1em
+
+	\item[] 
+	\headerrow
+		{\textbf{Simon Fraser University}}
+% 		{\textbf{GPA: 3.08}}
+        {}
+	\\
+	\headerrow
+		{\textit{B.Sc. in Computing Science and Molecular Biology \& Biochemistry}}
+		{\small{{Expected Graduation:} \textit{Fall 2022}}}
+		
+	%\item[]
+	%\begin{itemize}
+	%\item \textbf{\textit{Relevant Coursework: }} Data Structures and Programming, Introduction to Software Engineering, Database Systems I,  Artificial Intelligence Survey, Biomedical Computing, Computational Linguistics.
+	%\end{itemize}
+	
+
+\end{itemize}
+
+\vspace{-0.2em}
+\hrule %-------------------------------------------------------------------------
+\vspace{-0.4em}
+
+\subsection*{Personal Projects}
+
+\vspace{-0.2em}
+
+\begin{itemize}[leftmargin=0em]
+	\parskip=0.1em	
+
+    \item[]
+    \headerrow
+		{\textbf{DockerMan}{ / }
+		\small{\href{https://github.com/NickChubb/dockerman}{\faGithub{ }GitHub}}}
+		{\small{\textit{Node.js, Express.js, ReactJS}}}
+		
+	\vspace{-.3em}
+
+	\begin{itemize*}
+	
+	\item Modular server back-end which utilizes Node.js and Docker to serve containers on the same web domain
+	\item Integrated with React for front-end interactive user dashboard, which includes:
+	\begin{itemize}
+		    \item Container control panel to start/stop/restart or port-forward individual containers to a URL slug;
+		    \item System configuration screen to control security features, such as preventing too many login attempts;
+		    \item Log screen which displays and allows user to manage database of log messages.
+    \end{itemize}
+	
+	
+	
+	\end{itemize*}
+	
+	\vspace{-.4em}	
+
+	\item[]
+	\headerrow
+		{\textbf{Hawking - the SFU Science Discord Bot}{ / } \small{\href{https://github.com/NickChubb/hawking}{\faGithub{ }GitHub}}}
+		{\small{\textit{ReactJS, Node.js, Docker}}}
+		
+	\vspace{-.3em}
+	
+	\begin{itemize*}
+	
+	\item Discord bot built with Discord.js API and React to solve multiple needs for Science Undergraduate Society 
+% 	\item Interactive user control panel 
+	\item React control-panel utilizes SQL to allow users to easily manage database of events at Simon Fraser University
+% 	\begin{itemize}
+% 		    \item Managing an SQL database of events at Simon Fraser University
+% 		    \item Searching for gifs using the GIPHY API by input query
+% 		    \item Controlling music and randomized draws for events
+% 	\end{itemize}
+	%\item Integrated bot with React back-end to create user control panel
+	%\item Containerized with Docker to run the React back-end using Node.js
+	
+	
+	\end{itemize*}
+	
+% 	\item[]
+% 	\headerrow
+% 		{\textbf{Personal Portfolio Site}}
+% 		{\textit{December, 2019}}
+% 		\\
+% 	\headerrow
+% 		{\textit{Node.js, Express.js, Bootstrap}}
+% 		{}
+		
+% 	\vspace{-.5em}
+
+% 	\begin{itemize*}
+	
+% 	\item Personal website to display information about me, my projects, and my experience
+% 	\item Built using Bootstrap to incorporate mobile compatibility
+% 	\item Hosted using Node.js and Nginx on an Ubuntu server provided by AWS
+	
+	
+% 	\end{itemize*}	
+	
+\end{itemize}
+
+% \vspace{.2em}
+\hrule %-------------------------------------------------------------------------
+\vspace{-0.3em}
+
+\subsection*{Volunteer Experience}
+
+\vspace{-0.2em}
+
+\begin{itemize}[leftmargin=0em]
+	\parskip=0.1em
+	
+	\item[]
+	\headerrow
+	    {\textbf{Vancouver Startup Week}}
+	    %{ / } \small{\href{https://vanstartupweek.ca/}{\faExternalLink}}}
+	    {\textbf{Vancouver, BC}}
+    \\
+	\headerrow
+		{\emph{Account Manager}}
+		{\emph{February, 2021 -- Present}}
+	
+	\vspace{-.3em}
+	
+	\begin{itemize*}
+		\item Co-ordinated and hosted weekly panels with a range of companies within the local start-up community
+	\end{itemize*}
+	\vspace{-.4em}
+	\item[]
+	\headerrow
+		{\textbf{Science Undergraduate Society}}
+		{\textbf{Burnaby, BC}}
+	\\
+	\headerrow
+		{\emph{President}}
+		{\emph{May, 2020 -- April, 2021}}
+		
+	\vspace{-.3em}
+	
+	\begin{itemize*}
+% 		\item Manages a team of 10 executives to effectively run student society representing 3000+ students
+ 		\item Organized and chaired weekly team meetings to plan events and advocacy
+		\item Formalized process and procedure by using modern management practices such as Kanban boards
+        \item Effectively led and managed a team of 10 students to completely re-write society By-Laws and Policy
+	\end{itemize*}	
+	
+	\vspace{.3em}
+	
+% 	\item[]
+% 	\headerrow
+% 		{\textbf{Simon Fraser Student Society}}
+% 		{\textbf{Burnaby, BC}}
+% 	\\
+% 	\headerrow
+% 		{\emph{Board Member}}
+% 		{\emph{May, 2019 -- April, 2020}}
+% 	\begin{itemize*}
+% 		%rish said to cut both these%%%%%%%%
+% 		%\item The Simon Fraser Student Society exists to represent and advocate for the \\ interests of all 26,000 undergraduate students at Simon Fraser University
+% 		%\item Elected by a majority of students in the Faculty of Applied Science
+% 		%rish said to cut both these%%%%%%%%
+% 			%\item Supported in the management of \$5 million operating budget and \$25 million in assets
+% 			%\item Supervised the Executive Director and 20+ staff
+% 			\item Established and led a team as chair of the Surrey Campus Committee
+% 			\item Planned, organized, and executed a \$150,000 concert and many more events
+% 			%\item Brought back campus life to Vancouver students as part of the Vancouver Campus Committee
+% 			%\item Spent many hours attending meetings, campaigning, and actively-listening  to students \\ in order to accurately represent voter-ship at the board table
+% 			%\item Responded in a timely fashion to upwards of 20 emails daily
+% 			%\item[$\circ$] Experienced in writing professional, bi-weekly and semesterly reports
+% 			%\item[$\circ$] Frequently attended more than 5 hours of meetings a week
+		
+		
+% 	\end{itemize*}
+	
+% 	\vspace{.4em}
+	
+% 	\item[]
+% 	\headerrow
+% 		{\textbf{Molecular Biology and Biochemistry Student Union}}
+% 		{\textbf{Burnaby, BC}}
+% 	\\
+% 	\headerrow
+% 		{\emph{Executive Member}}
+% 		{\emph{September, 2018 -- April, 2019}}
+% 	\begin{itemize*}
+% 		\item Elected student representative on the Department Undergraduate Curriculum Committee
+% 		\item Led an initiative for more course offerings as intermediary between the students and faculty
+		
+		
+		
+% 	\end{itemize*}
+
+\end{itemize}
+
+\vspace{-0.4em}
+
+\hrule
+\hrule
+
+
+
+%-------------------------------------------------------------------------
+
+
+\begin{center}
+
+% \textit{For more information, please refer to my website or contact me.}
+
+\end{center}
+
+\end{document}
