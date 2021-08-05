@@ -10,3 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Nicholas_Chubb_SWE_Resume.tex
+      - uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: Nicholas_Chubb_SWE_Resume.pdf
