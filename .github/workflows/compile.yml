@@ -11,7 +11,7 @@ jobs:
         with:
           root_file: Nicholas_Chubb_SWE_Resume.tex
       - name: Install LaTeXTools
-        run: sudo apt-get install texliv
+        run: sudo apt-get install texlive
       - name: Convert DVI to PNG
         run: dvipng -D 150 Nicholas_Chubb_SWE_Resume.dvi
       - name: Push PDF to repo
