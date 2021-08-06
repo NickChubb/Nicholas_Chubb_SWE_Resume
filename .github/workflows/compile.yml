@@ -11,10 +11,10 @@ jobs:
         with:
           root_file: Nicholas_Chubb_SWE_Resume.tex
       - name: Install LaTeXTools
-        run: sudo apt-get install dvipng
-      - name: Convert DVI to PNG
-        run: dvipng -D 150 Nicholas_Chubb_SWE_Resume.dvi
-      - name: Push PDF to repo
+        run: sudo apt install poppler-utils 
+      - name: Convert PDF to PNG
+        run: pdftoppm -png Nicholas_Chubb_SWE_Resume.pdf Nicholas_Chubb_SWE_Resume
+      - name: Push PDF and PNG to repo
         uses: actions-x/commit@v2
         with:
           message: Update Nicholas_Chubb_SWE_Resume.pdf
