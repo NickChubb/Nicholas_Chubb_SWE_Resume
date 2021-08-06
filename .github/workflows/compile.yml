@@ -10,9 +10,11 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Nicholas_Chubb_SWE_Resume.tex
+      - name: Convert DVI to PNG
+        run: dvipng -D 150 Nicholas_Chubb_SWE_Resume.dvi
       - name: Push PDF to repo
         uses: actions-x/commit@v2
         with:
           message: Update Nicholas_Chubb_SWE_Resume.pdf
           # The files to add separated by space, defaults to every file
-          files: Nicholas_Chubb_SWE_Resume.pdf
+          files: Nicholas_Chubb_SWE_Resume.pdf Nicholas_Chubb_SWE_Resume.dvi
