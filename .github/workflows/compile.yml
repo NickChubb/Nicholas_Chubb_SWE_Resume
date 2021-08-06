@@ -19,4 +19,4 @@ jobs:
         with:
           message: Update Nicholas_Chubb_SWE_Resume.pdf
           # The files to add separated by space, defaults to every file
-          files: Nicholas_Chubb_SWE_Resume.pdf Nicholas_Chubb_SWE_Resume.png
+          #files: Nicholas_Chubb_SWE_Resume.pdf Nicholas_Chubb_SWE_Resume.png
