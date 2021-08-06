@@ -10,6 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Nicholas_Chubb_SWE_Resume.tex
+      - name: Install LaTeXTools
+        run: apt-get install texliv
       - name: Convert DVI to PNG
         run: dvipng -D 150 Nicholas_Chubb_SWE_Resume.dvi
       - name: Push PDF to repo
