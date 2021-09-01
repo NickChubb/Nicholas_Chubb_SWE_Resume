@@ -1,9 +1,9 @@
 % resume.tex
 % vim:set ft=tex spell:
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage{fontawesome}
-\usepackage[letterpaper,margin=.4in]{geometry}
+\usepackage[legalpaper,margin=.6in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
 \usepackage{enumitem}
@@ -53,21 +53,19 @@
 
 \begin{center}
 
-{\Huge \textbf{Nicholas Chubb}}
+{\Huge \textbf{Nicholas Chubb}} \\
 \vspace{1em}
-\\
 {\small
-{{ }\faHome { }---- ---a St., Surrey BC, Canada, --- ---} $|$ 
-{{ }\faPhoneSquare { } (---) --- -- ----} $|$ 
-{{ }\faUser { } \href{https://nickchubb.ca/}{nickchubb.ca}}  \\
-\vspace{.3em}
-{{ }\faLinkedinSquare { } \href{https://linkedin.com/in/nickrchubb}{linkedin.com/in/nickrchubb}} $|$ 
-{{ }\faGithub { } \href{https://github.com/NickChubb}{github.com/nickchubb}} $|$ 
+% {{ }\faHome { }Vancouver, Canada} \\
+% {{ }\faPhoneSquare { } (---) --- -- ----} $|$ 
+{{ }\faHome { }Vancouver, Canada} $|$ 
+{{ }\faGlobe { } \href{https://nickchubb.ca/}{nickchubb.ca}} $|$ 
+{{ }\faLinkedinSquare { } \href{https://linkedin.com/in/nickrchubb}{/in/nickrchubb}} $|$ 
+{{ }\faGithub { } \href{https://github.com/NickChubb}{/nickchubb}} $|$ 
 {{ }\faEnvelope { } \href{mailto:nick@nickchubb.ca}{nick@nickchubb.ca}}\\ \vspace{.2em}
 }
 \end{center}
 
-\hrule
 \hrule
 \vspace{-0.5em}
 %-------------------------------------------------------------------------
@@ -129,7 +127,7 @@
 		{\emph{Quality Assurance Engineer}}
 		{\emph{September, 2020 -- April, 2021}}
 		
-	\vspace{-.3em}
+% 	\vspace{-.3em}
 	\begin{itemize*}
 	    \item Operated as part of an agile team to assist in the development of over 8 different software services
 		\item Designed and implemented Selenium test suite for Firmware Management Service
@@ -166,10 +164,13 @@
 		{\textit{B.Sc. in Computing Science and Molecular Biology \& Biochemistry}}
 		{\small{{Expected Graduation:} \textit{Fall 2022}}}
 		
-	%\item[]
-	%\begin{itemize}
-	%\item \textbf{\textit{Relevant Coursework: }} Data Structures and Programming, Introduction to Software Engineering, Database Systems I,  Artificial Intelligence Survey, Biomedical Computing, Computational Linguistics.
-	%\end{itemize}
+	\item[]
+	\begin{itemize}
+	\item 
+	{ \small
+	\textbf{\textit{Relevant Coursework: }}Data Structures and Programming, Introduction to Software Engineering, Database Systems I,  Artificial Intelligence Survey, Biomedical Computing, Computational Linguistics.
+	}
+	\end{itemize}
 	
 
 \end{itemize}
@@ -187,11 +188,23 @@
 
     \item[]
     \headerrow
-		{\textbf{DockerMan}{ / }
-		\small{\href{https://github.com/NickChubb/dockerman}{\faGithub{ }GitHub}}}
-		{\small{\textit{Node.js, Express.js, ReactJS}}}
+% 		{\textbf{DockerMan}{ / }
+% 		\small{\href{https://github.com/NickChubb/dockerman}{\faGithub{ }GitHub}}}
+% 		{\small{\textit{Node.js, Express.js, ReactJS}}}
+        {\textbf{DockerMan}}
+		{
+		    \small{
+		        \href{https://github.com/NickChubb/dockerman}{\faGithub{ }GitHub}
+		      %  $ | $
+	        }
+		}
+		\\
+	\headerrow
+		{\small{\textit{Node.js, Express.js, ReactJS, Docker}}}
+		{}
 		
-	\vspace{-.3em}
+		
+% 	\vspace{-.3em}
 
 	\begin{itemize*}
 	
@@ -207,20 +220,32 @@
 	
 	\end{itemize*}
 	
-	\vspace{-.4em}	
+% 	\vspace{-.4em}	
 
 	\item[]
 	\headerrow
-		{\textbf{Hawking - the SFU Science Discord Bot}{ / } \small{\href{https://github.com/NickChubb/hawking}{\faGithub{ }GitHub}}}
+% 		{\textbf{Hawking - the SFU Science Discord Bot}{ / } \small{\href{https://github.com/NickChubb/hawking}{\faGithub{ }GitHub}}}
+% 		{\small{\textit{ReactJS, Node.js, Docker}}}
+        {\textbf{Hawking - the SFU Science Discord Bot}}
+		{
+		    \small{
+		        \href{https://github.com/NickChubb/hawking}{\faGithub{ }GitHub} 
+		      %  $ | $
+	        }
+		}
+		\\
+	\headerrow
 		{\small{\textit{ReactJS, Node.js, Docker}}}
+		{}
 		
-	\vspace{-.3em}
+% 	\vspace{-.3em}
 	
 	\begin{itemize*}
 	
 	\item Discord bot built with Discord.js API and React to solve multiple needs for Science Undergraduate Society 
 % 	\item Interactive user control panel 
 	\item React control-panel utilizes SQL to allow users to easily manage database of events at Simon Fraser University
+	\item Allows users to interact with variety of text commands, including controlling music and searching for gifs
 % 	\begin{itemize}
 % 		    \item Managing an SQL database of events at Simon Fraser University
 % 		    \item Searching for gifs using the GIPHY API by input query
@@ -232,25 +257,32 @@
 	
 	\end{itemize*}
 	
-% 	\item[]
-% 	\headerrow
-% 		{\textbf{Personal Portfolio Site}}
-% 		{\textit{December, 2019}}
-% 		\\
-% 	\headerrow
-% 		{\textit{Node.js, Express.js, Bootstrap}}
-% 		{}
+% 	\vspace{-.4em}	
+	
+	\item[]
+	\headerrow
+		{\textbf{Personal Portfolio Site}}
+		{
+		    \small{
+		        \href{https://github.com/NickChubb/nickchubb.ca}{\faGithub{ }GitHub}
+		        $ | $
+		        \href{https://nickchubb.ca}{\faGlobe{ }nickchubb.ca}
+	        }
+		}
+		\\
+	\headerrow
+		{\small{\textit{Gatsby.js, Express.js}}}
+		{}
 		
-% 	\vspace{-.5em}
+% 	\vspace{-.3em}
 
-% 	\begin{itemize*}
+	\begin{itemize*}
 	
-% 	\item Personal website to display information about me, my projects, and my experience
-% 	\item Built using Bootstrap to incorporate mobile compatibility
-% 	\item Hosted using Node.js and Nginx on an Ubuntu server provided by AWS
+	\item Personal website built with Gatsby.js to display information about me, my projects, and my experience
+	\item Utilizes Bootstrap to incorporate mobile compatibility
+	\item Generates page content programmatically from JSON files, soon will fetch data from MongoDB
 	
-	
-% 	\end{itemize*}	
+	\end{itemize*}	
 	
 \end{itemize}
 
@@ -275,12 +307,15 @@
 		{\emph{Account Manager}}
 		{\emph{February, 2021 -- Present}}
 	
-	\vspace{-.3em}
+% 	\vspace{-.3em}
 	
 	\begin{itemize*}
-		\item Co-ordinated and hosted weekly panels with a range of companies within the local start-up community
+	    \item Facilitated 15 panels for Vancouver's premier entrepreneurial event, which has had 12,800 attendees over 8 years
+		\item Coordinated and hosted weekly panels with a range of companies within the local start-up community
 	\end{itemize*}
-	\vspace{-.4em}
+	
+% 	\vspace{-.3em}
+	
 	\item[]
 	\headerrow
 		{\textbf{Science Undergraduate Society}}
@@ -290,7 +325,7 @@
 		{\emph{President}}
 		{\emph{May, 2020 -- April, 2021}}
 		
-	\vspace{-.3em}
+% 	\vspace{-.4em}
 	
 	\begin{itemize*}
 % 		\item Manages a team of 10 executives to effectively run student society representing 3000+ students
@@ -299,33 +334,35 @@
         \item Effectively led and managed a team of 10 students to completely re-write society By-Laws and Policy
 	\end{itemize*}	
 	
-	\vspace{.3em}
+% 	\vspace{-.3em}
 	
-% 	\item[]
-% 	\headerrow
-% 		{\textbf{Simon Fraser Student Society}}
-% 		{\textbf{Burnaby, BC}}
-% 	\\
-% 	\headerrow
-% 		{\emph{Board Member}}
-% 		{\emph{May, 2019 -- April, 2020}}
-% 	\begin{itemize*}
-% 		%rish said to cut both these%%%%%%%%
-% 		%\item The Simon Fraser Student Society exists to represent and advocate for the \\ interests of all 26,000 undergraduate students at Simon Fraser University
-% 		%\item Elected by a majority of students in the Faculty of Applied Science
-% 		%rish said to cut both these%%%%%%%%
-% 			%\item Supported in the management of \$5 million operating budget and \$25 million in assets
-% 			%\item Supervised the Executive Director and 20+ staff
-% 			\item Established and led a team as chair of the Surrey Campus Committee
-% 			\item Planned, organized, and executed a \$150,000 concert and many more events
-% 			%\item Brought back campus life to Vancouver students as part of the Vancouver Campus Committee
-% 			%\item Spent many hours attending meetings, campaigning, and actively-listening  to students \\ in order to accurately represent voter-ship at the board table
-% 			%\item Responded in a timely fashion to upwards of 20 emails daily
-% 			%\item[$\circ$] Experienced in writing professional, bi-weekly and semesterly reports
-% 			%\item[$\circ$] Frequently attended more than 5 hours of meetings a week
+	\item[]
+	\headerrow
+		{\textbf{Simon Fraser Student Society}}
+		{\textbf{Burnaby, BC}}
+	\\
+	\headerrow
+		{\emph{Board Member}}
+		{\emph{May, 2019 -- April, 2020}}
+		
+	
+	\begin{itemize*}
+		%rish said to cut both these%%%%%%%%
+		%\item The Simon Fraser Student Society exists to represent and advocate for the \\ interests of all 26,000 undergraduate students at Simon Fraser University
+		%\item Elected by a majority of students in the Faculty of Applied Science
+		%rish said to cut both these%%%%%%%%
+			%\item Supported in the management of \$5 million operating budget and \$25 million in assets
+			%\item Supervised the Executive Director and 20+ staff
+			\item Established and led a team as chair of the Surrey Campus Committee to successfully host over 15 events
+			\item Planned, organized, and executed a \$150,000 concert and many more events as a director on the Events Committee
+			%\item Brought back campus life to Vancouver students as part of the Vancouver Campus Committee
+			%\item Spent many hours attending meetings, campaigning, and actively-listening  to students \\ in order to accurately represent voter-ship at the board table
+			%\item Responded in a timely fashion to upwards of 20 emails daily
+			%\item[$\circ$] Experienced in writing professional, bi-weekly and semesterly reports
+			%\item[$\circ$] Frequently attended more than 5 hours of meetings a week
 		
 		
-% 	\end{itemize*}
+	\end{itemize*}
 	
 % 	\vspace{.4em}
 	
@@ -347,9 +384,8 @@
 
 \end{itemize}
 
-\vspace{-0.4em}
+% \vspace{-0.4em}
 
-\hrule
 \hrule
 
 
