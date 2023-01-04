@@ -6,6 +6,10 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
+      - name: Set ownership
+        run: |
+          # this is to fix GIT not liking owner of the checkout dir
+          chown -R $(id -u):$(id -g) $PWD
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
